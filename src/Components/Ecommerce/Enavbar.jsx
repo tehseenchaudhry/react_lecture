@@ -23,10 +23,10 @@ const ENavbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium">Home</a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium">Shop</a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium">About</a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+            <Link to="" className="text-gray-700 hover:text-purple-600 font-medium">Home</Link>
+            <Link to="/eproduct" className="text-gray-700 hover:text-purple-600 font-medium">Shop</Link>
+            <Link to="" className="text-gray-700 hover:text-purple-600 font-medium">About</Link>
+            <Link to="" className="text-gray-700 hover:text-purple-600 font-medium">Contact</Link>
           </div>
 
           {/* Search Bar */}
