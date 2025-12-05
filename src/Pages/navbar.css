@@ -1,0 +1,137 @@
+.icons{
+    display: none;
+}
+.showNav{
+    display: flex;
+    gap: 7px;
+}
+.hideNav{
+    display: flex;
+    gap: 7px;
+}
+
+@media (max-width : 768px) {
+
+    .icons{
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+    nav h1{
+        position: absolute;
+        left: 5%;
+    }
+    nav button{
+        display: none;
+    }
+    .hideNav{
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 6%;
+        width: 25%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 60vh;
+        justify-content: center;
+        right: 3%;
+        transform: scale(0);
+        transition: .5s;
+        opacity: 0;
+        transform-origin: top right;
+        border: 2px solid green;
+    }
+    .showNav{
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        position: absolute;
+        justify-content: center;
+        top: 6%;
+        width: 25%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 60vh;
+        right: 3%;
+        transition: .5s;
+        transform-origin: top right;
+        border: 2px solid green;
+    }
+}
+
+@media (max-width: 425px) {
+
+    nav h1 {
+        font-size: 1.4rem;
+        left: 6%;
+    }
+
+    .icons {
+        right: 6%;
+    }
+
+    
+    .hideNav {
+        width: 45%;
+        top: 7%;
+        right: 4%;
+        border: 2px solid blueviolet;
+    }
+    .showNav {
+        width: 45%;
+        top: 7%;
+        right: 4%;
+        border: 2px solid blueviolet;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    nav h1 {
+        font-size: 1.2rem;
+        left: 6%;
+    }
+
+    .icons {
+        right: 7%;
+    }
+
+    
+    .hideNav {
+        width: 50%;
+        top: 8%;
+        border: 2px solid red;
+        right: 4%;
+    }
+     .showNav {
+        width: 50%;
+        top: 8%;
+        border: 2px solid red;
+        right: 4%;
+    }
+}
+
+
+/* @media (max-width: 320px) {
+
+    nav h1 {
+        font-size: 1rem;
+        left: 5%;
+    }
+
+    .icons {
+        right: 8%;
+    }
+
+    
+    .hideNav {
+        width: 50%;
+        top: 9%;
+        right: 4%;
+    }
+    .showNav{
+        width: 50%;
+        top: 9%;
+        right: 4%;
+    }
+} */

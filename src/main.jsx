@@ -1,0 +1,20 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { ContextProvider } from "./Components/Context/Context.jsx"
+import { Provider } from 'react-redux'
+import { Store } from './redux/store/Store.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <Provider store={Store}>
+    <App />
+  </Provider>
+) 
+// ctrl w delete
+// ctrl shift t for recover delete tab
+// ctrl shift p  
+
+//  ,usecallback ,usememo,  swiperjs, .strim, setinterwal ,
+
+ 
